@@ -32,19 +32,80 @@ return (
 <div className="section alt" style={{ marginTop:16 }}>
 <h3 style={{ marginTop:0 }}>Meet the Team</h3>
 <div className="team">
-<motion.div className="team-card" initial={{ opacity:0, y:8 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:.25 }}><img className="avatar" src="/pizzas/pizza_2.jpg" alt="Head Chef" /><strong>Marco Rossi</strong><p className="muted">Head Chef</p></motion.div>
-<motion.div className="team-card" initial={{ opacity:0, y:8 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:.25, delay:.05 }}><img className="avatar" src="/pizzas/pizza_5.jpg" alt="Operations" /><strong>Priya Patel</strong><p className="muted">Operations Lead</p></motion.div>
-<motion.div className="team-card" initial={{ opacity:0, y:8 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:.25, delay:.1 }}><img className="avatar" src="/pizzas/pizza_8.jpg" alt="Customer Care" /><strong>Sam Lee</strong><p className="muted">Customer Care</p></motion.div>
+  <motion.div className="team-card" initial={{ opacity:0, y:8 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:.25 }}>
+    <img 
+      className="avatar" 
+      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format&fit=crop&q=80" 
+      alt="Marco Rossi - Head Chef" 
+      loading="lazy"
+    />
+    <strong>Marco Rossi</strong>
+    <p className="muted">Head Chef</p>
+  </motion.div>
+  
+  <motion.div className="team-card" initial={{ opacity:0, y:8 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:.25, delay:.05 }}>
+    <img 
+      className="avatar" 
+      src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&auto=format&fit=crop&q=80" 
+      alt="Priya Patel - Operations Lead"
+      loading="lazy"
+    />
+    <strong>Priya Patel</strong>
+    <p className="muted">Operations Lead</p>
+  </motion.div>
+  
+  <motion.div className="team-card" initial={{ opacity:0, y:8 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:.25, delay:.1 }}>
+    <img 
+      className="avatar" 
+      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80" 
+      alt="Sam Lee - Customer Care"
+      loading="lazy"
+    />
+    <strong>Sam Lee</strong>
+    <p className="muted">Customer Care</p>
+  </motion.div>
 </div>
 </div>
 
 <div className="section" style={{ marginTop:16 }}>
 <h3 style={{ marginTop:0 }}>Gallery</h3>
 <div className="gallery">
-<img src="/pizzas/pizza_10.jpg" alt="Neapolitan crust" loading="lazy" />
-<img src="/pizzas/pizza_12.jpg" alt="Pepperoni close-up" loading="lazy" />
-<img src="/pizzas/pizza_14.jpg" alt="Veggie colors" loading="lazy" />
-<img src="/pizzas/pizza_16.jpg" alt="Fresh out of oven" loading="lazy" />
+  <motion.img 
+    src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&auto=format&fit=crop&q=80" 
+    alt="Freshly baked pizza with basil" 
+    loading="lazy"
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+  />
+  <motion.img 
+    src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&auto=format&fit=crop&q=80" 
+    alt="Gourmet pizza with fresh ingredients" 
+    loading="lazy"
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: 0.1 }}
+  />
+  <motion.img 
+    src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&auto=format&fit=crop&q=80" 
+    alt="Wood-fired pizza preparation" 
+    loading="lazy"
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+  />
+  <motion.img 
+    src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&auto=format&fit=crop&q=80" 
+    alt="Assorted pizza selection" 
+    loading="lazy"
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: 0.3 }}
+  />
 </div>
 </div>
 
